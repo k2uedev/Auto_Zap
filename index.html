@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto_Zap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Envio de Mensagens em Massa</h1>
+        <form id="formEnvio">
+            <label for="numero">Número do WhatsApp:</label>
+            <input type="text" id="numero" name="numero" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <label>Enviar quantas vezes?</label>
+            <div class="grupo-radio">
+                <label><input type="radio" name="repeticoes" value="5"> 5</label>
+                <label><input type="radio" name="repeticoes" value="10"> 10</label>
+                <label><input type="radio" name="repeticoes" value="15"> 15</label>
+                <label><input type="radio" name="repeticoes" value="20"> 20</label>
+                <label><input type="radio" name="repeticoes" value="25"> 25</label>
+                <label><input type="radio" name="repeticoes" value="30"> 30</label>
+            </div>
+
+            <label>Intervalo de envio (minutos):</label>
+            <div class="grupo-radio">
+                <label><input type="radio" name="intervalo" value="1"> 1 minuto</label>
+                <label><input type="radio" name="intervalo" value="2"> 2 minutos</label>
+                <label><input type="radio" name="intervalo" value="5"> 5 minutos</label>
+                <label><input type="radio" name="intervalo" value="10"> 10 minutos</label>
+                <label><input type="radio" name="intervalo" value="15"> 15 minutos</label>
+                <label><input type="radio" name="intervalo" value="20"> 20 minutos</label>
+            </div>
+
+            <label>Opções adicionais:</label>
+            <div class="grupo-checkbox">
+                <label><input type="checkbox" name="adicional" value="confirmar"> Confirmar envio</label>
+                <label><input type="checkbox" name="adicional" value="notificar"> Notificar ao enviar</label>
+                <label><input type="checkbox" name="adicional" value="salvar"> Salvar histórico</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
